@@ -1,0 +1,48 @@
+comandos my sql 
+==========================
+
+distinct - ex - select distinct tempoentrega from produtos
+
+limit - ex - 10,20
+
+order by - ex - desc,asc
+
+where - ex - tempo entrega=5
+
+between - entre
+
+menor maior - <> <= >=
+
+in - ex - where tempo de entrega in(5,10)
+
+not in - where tempo de entrega not in(5,10)
+
+like - where nome produto like "%terminacom"   "iniaciacom%" "%conter%"
+
+max - ex- select max(precounitario) as menorpreco
+          from produtos
+
+min - ex- select min(precounitario) as maiorpreco
+          from produtos
+
+avg - media - ex- selectavg(precounitario) as mediapreco
+          from produtos
+
+sum - ex -  select sum(valor_pedido)
+			from pedidos
+			where year(data_pedido)='2006'
+
+count -  ex -  select sum(valor_pedido),count(pedidoId)as num_pedidos
+			from pedidos
+			where year(data_pedido)='2006'  
+
+group by-       
+
+having - ex - having tempoentrega +=5
+
+
+
+.=concatenação - ex - $i="select * ";
+                    $i.="from ex";
+
+
